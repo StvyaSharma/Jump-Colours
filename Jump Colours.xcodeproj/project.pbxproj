@@ -16,6 +16,10 @@
 		5D11C83526591D1A00CBA48E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D11C83426591D1A00CBA48E /* Assets.xcassets */; };
 		5D11C84026591D1A00CBA48E /* Jump_ColoursTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11C83F26591D1A00CBA48E /* Jump_ColoursTests.swift */; };
 		5D11C84B26591D1A00CBA48E /* Jump_ColoursUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11C84A26591D1A00CBA48E /* Jump_ColoursUITests.swift */; };
+		5D11C85A26591DE400CBA48E /* Color Switch Bounce.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 5D11C85826591DE400CBA48E /* Color Switch Bounce.mp3 */; };
+		5D11C85B26591DE400CBA48E /* Color Jump theme.m4a in Resources */ = {isa = PBXBuildFile; fileRef = 5D11C85926591DE400CBA48E /* Color Jump theme.m4a */; };
+		5D11C85F2659209900CBA48E /* MainScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D11C85E2659209900CBA48E /* MainScene.swift */; };
+		5D11C861265920AF00CBA48E /* MenuScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 5D11C860265920AF00CBA48E /* MenuScene.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,10 @@
 		5D11C84626591D1A00CBA48E /* Jump ColoursUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Jump ColoursUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D11C84A26591D1A00CBA48E /* Jump_ColoursUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Jump_ColoursUITests.swift; sourceTree = "<group>"; };
 		5D11C84C26591D1A00CBA48E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D11C85826591DE400CBA48E /* Color Switch Bounce.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Color Switch Bounce.mp3"; sourceTree = "<group>"; };
+		5D11C85926591DE400CBA48E /* Color Jump theme.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Color Jump theme.m4a"; sourceTree = "<group>"; };
+		5D11C85E2659209900CBA48E /* MainScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScene.swift; sourceTree = "<group>"; };
+		5D11C860265920AF00CBA48E /* MenuScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = MenuScene.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +109,12 @@
 		5D11C82626591D1900CBA48E /* Jump Colours */ = {
 			isa = PBXGroup;
 			children = (
+				5D11C8632659218A00CBA48E /* Main Game */,
+				5D11C8622659217000CBA48E /* Menu Screen */,
+				5D11C85926591DE400CBA48E /* Color Jump theme.m4a */,
+				5D11C85826591DE400CBA48E /* Color Switch Bounce.mp3 */,
 				5D11C82726591D1900CBA48E /* AppDelegate.swift */,
-				5D11C82926591D1900CBA48E /* GameScene.sks */,
 				5D11C82B26591D1900CBA48E /* Actions.sks */,
-				5D11C82D26591D1900CBA48E /* GameScene.swift */,
 				5D11C82F26591D1900CBA48E /* GameViewController.swift */,
 				5D11C83126591D1900CBA48E /* Main.storyboard */,
 				5D11C83426591D1A00CBA48E /* Assets.xcassets */,
@@ -129,6 +139,24 @@
 				5D11C84C26591D1A00CBA48E /* Info.plist */,
 			);
 			path = "Jump ColoursUITests";
+			sourceTree = "<group>";
+		};
+		5D11C8622659217000CBA48E /* Menu Screen */ = {
+			isa = PBXGroup;
+			children = (
+				5D11C860265920AF00CBA48E /* MenuScene.sks */,
+				5D11C85E2659209900CBA48E /* MainScene.swift */,
+			);
+			name = "Menu Screen";
+			sourceTree = "<group>";
+		};
+		5D11C8632659218A00CBA48E /* Main Game */ = {
+			isa = PBXGroup;
+			children = (
+				5D11C82926591D1900CBA48E /* GameScene.sks */,
+				5D11C82D26591D1900CBA48E /* GameScene.swift */,
+			);
+			name = "Main Game";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,8 +264,11 @@
 			files = (
 				5D11C83326591D1900CBA48E /* Main.storyboard in Resources */,
 				5D11C82A26591D1900CBA48E /* GameScene.sks in Resources */,
+				5D11C85B26591DE400CBA48E /* Color Jump theme.m4a in Resources */,
+				5D11C85A26591DE400CBA48E /* Color Switch Bounce.mp3 in Resources */,
 				5D11C83526591D1A00CBA48E /* Assets.xcassets in Resources */,
 				5D11C82C26591D1900CBA48E /* Actions.sks in Resources */,
+				5D11C861265920AF00CBA48E /* MenuScene.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +294,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D11C82E26591D1900CBA48E /* GameScene.swift in Sources */,
+				5D11C85F2659209900CBA48E /* MainScene.swift in Sources */,
 				5D11C83026591D1900CBA48E /* GameViewController.swift in Sources */,
 				5D11C82826591D1900CBA48E /* AppDelegate.swift in Sources */,
 			);
